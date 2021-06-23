@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
@@ -33,22 +33,21 @@
         <span class="mr-2">Latest Release</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
-    </v-app-bar>
-
+    </v-app-bar> -->
+    <Header />
     <v-main>
-      <HelloWorld />
+      <router-view />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Header from './components/HeaderNav.vue';
 
 export default {
   name: 'App',
-
   components: {
-    HelloWorld,
+    Header,
   },
 
   data: () => ({

@@ -15,7 +15,7 @@
    2. Vue 组件名：使用大驼峰，并与文件名一致。如：ExampleComponent
    3. 变量、方法名：使用小驼峰。如：exampleVariable、exampleFunction
    4. 常量名：使用大写字母下划线分隔。如：EXAMPLE_CONST
-   5. 样式名：使用小驼峰。如：exampleStyle
+   5. 样式名：全小写并使用"-"连接。如：example-style
    6. 命名规则：使用英语单词组合，见文知义，不简写
 2. 代码规范及校验：
    1. 采用 [Airbnb](https://github.com/airbnb/javascript) 标准定义代码规范

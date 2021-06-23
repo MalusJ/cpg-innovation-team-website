@@ -27,6 +27,9 @@
    3. 使用 [Prettier](https://prettier.io/) 统一代码风格并自动格式化
 4. 提交信息（Commit Message)：可以准确描述本次提交的涉及的功能模块和具体修改内容，非相关内容请分开多次提交
 
+## UI组件库
+[Vuetify](https://vuetifyjs.com/zh-Hans/)
+
 ## 项目主要文件与目录结构说明
 ```
 .
@@ -44,6 +47,8 @@
 │   ├── components    公用组件目录
 │   │   └── HeaderNav.vue    顶部导航栏
 │   ├── main.js    项目入口文件
+│   ├── plugins    插件目录
+│   │   └── vuetify.js    UI组件库Vuetify配置文件
 │   ├── router.js    路由文件
 │   └── views    页面目录
 │       ├── AboutUs.vue    关于我们页面

@@ -54,7 +54,7 @@
 │       ├── AboutUs.vue    关于我们页面
 │       ├── Homepage.vue    主页
 │       ├── ProjectInfo.vue    项目介绍页面
-│       ├── RecuitmentInfo.vue    招聘信息页面
+│       ├── RecruitmentInfo.vue    招聘信息页面
 │       └── TeamInfo.vue    团队介绍页面
 └── tests
     └── unit    单元测试目录

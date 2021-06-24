@@ -12,6 +12,13 @@
    1. 文件名：
       1. Vue 组件文件：使用大驼峰，扩展名为 vue。如：ExampleComponent.vue
       2. 脚本文件：使用小驼峰，扩展名为 js。如：exampleLogic.js
+      3. 资源文件：
+         1. 图标：使用小写字母以 icon 起始并使用"-"链接。如：icon-example-icon.png
+         2. 背景图片：使用小写字母以 bg 起始并使用"-"链接。如：bg-example-background.jpg
+         3. 广告图片：使用小写字母以 ad 起始并使用"-"链接。如：ad-example-advertisement.jpg
+         4. 其他无分类图片：使用小写字母以 img 起始并使用"-"链接。如：img-example-image.jpg
+         5. 视频：使用小写字母以 video 起始并使用"-"链接。如：video-example-video.mp4
+         6. 扩展名小写，JPEG 格式以 .jpg 为统一扩展名
    2. Vue 组件名：使用大驼峰，并与文件名一致。如：ExampleComponent
    3. 变量、方法名：使用小驼峰。如：exampleVariable、exampleFunction
    4. 常量名：使用大写字母下划线分隔。如：EXAMPLE_CONST

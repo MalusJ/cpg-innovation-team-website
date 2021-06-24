@@ -15,7 +15,7 @@
     </div>
 
     <div class="team-title">团队介绍</div>
-    <div class="container">
+    <div class="team-introduction-container">
       <div class="profile">
         <img class="image" src="../assets/avatar.jpeg" />
         <div class="name">马化腾</div>
@@ -133,47 +133,36 @@ export default {};
   color: black;
 }
 
-.team-avatar {
-  margin: 0 auto;
-  width: 600px;
-}
-
-.team-introduction {
-  margin-left: 120px;
-  margin-right: 120px;
-  margin-top: 30px;
-}
-
-.container {
+.team-introduction-container {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  margin-left: auto;
-  margin-right: auto;
-}
+  margin-left: 200px;
+  margin-right: 200px;
 
-.profile {
-  text-align: center;
-  margin-bottom: 50px;
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 60px;
-}
+  .profile {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 60px;
 
-.image {
-  width: 130px;
-  margin-bottom: 20px;
-}
+    .image {
+      width: 130px;
+      margin-bottom: 20px;
+    }
 
-.name {
-  font-size: 18px;
-  color: black;
-}
+    .name {
+      font-size: 18px;
+      color: black;
+    }
 
-.position {
-  margin-top: 20px;
-  font-size: 14px;
-  line-height: 10px;
-  color: rgb(29, 62, 95);
+    .position {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 10px;
+      color: rgb(29, 62, 95);
+    }
+  }
 }
 </style>

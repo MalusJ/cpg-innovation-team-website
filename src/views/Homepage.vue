@@ -11,7 +11,7 @@
     </v-carousel>
 
     <v-container>
-      <h1 id="news-header">公司动态</h1>
+      <h1 id="news-header">News</h1>
       <v-row>
         <v-col md="4" sm="12">
           <v-container fluid>

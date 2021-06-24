@@ -6,6 +6,7 @@ import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false;
 
+// add the application key for accessing baidu map api
 Vue.use(BaiduMap, {
   ak: 'OLlbwIlG5ovWtUBiIMCQXH9jsAWGh54r',
 });

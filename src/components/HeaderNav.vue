@@ -10,18 +10,18 @@
     <v-spacer></v-spacer>
 
     <v-toolbar-items>
-      <v-btn text>Home</v-btn>
-      <v-btn text>About</v-btn>
-      <v-btn text>Projects</v-btn>
-      <v-btn text>Recuitment</v-btn>
-      <v-btn text>Team</v-btn>
-      <v-btn text>Contact</v-btn>
+      <v-btn text><router-link to="/">Home</router-link></v-btn>
+      <v-btn text><router-link to="/about">About</router-link></v-btn>
+      <v-btn text><router-link to="/projects">Projects</router-link></v-btn>
+      <v-btn text><router-link to="/recuitment">Recuitment</router-link></v-btn>
+      <v-btn text><router-link to="/team">Team</router-link></v-btn>
+      <v-btn text><router-link to="/contact">Contact</router-link></v-btn>
     </v-toolbar-items>
 
     <v-spacer></v-spacer>
 
-    <input type="text" placeholder="search" />
-    <v-btn icon>
+    <input id="header-search" type="text" placeholder="search" />
+    <v-btn icon class="mr-1">
       <v-icon>mdi-magnify</v-icon>
     </v-btn>
 
@@ -50,8 +50,13 @@ export default {
 </script>
 
 <style lang="scss">
-input {
+.v-toolbar__content .v-btn .v-btn__content a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+#header-search {
   border-radius: 4px !important;
   background-color: rgb(232, 237, 255) !important;
+  height: 60%;
 }
 </style>

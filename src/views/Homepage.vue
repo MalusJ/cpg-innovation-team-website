@@ -13,29 +13,37 @@
     <v-container>
       <h1 id="news-header">News</h1>
       <v-row>
-        <v-col md="4" sm="12">
-          <v-container fluid>
-            <v-img src="https://picsum.photos/500/300?image=1" />
-            <h2>AAA</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum ac nibh a malesuada. Etiam a arcu
-              ullamcorper, luctus dui tristique, varius magna.
-              <v-chip><a>More</a></v-chip>
-            </p>
+        <v-col md="4" sm="6" xs="12">
+          <v-container>
+            <v-card>
+              <v-img src="https://picsum.photos/500/300?image=1" />
+              <v-card-title>AAA</v-card-title>
+              <v-card-text>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum ac nibh a malesuada. Etiam a
+                arcu ullamcorper, luctus dui tristique, varius magna.
+              </v-card-text>
+              <v-card-text>
+                <v-chip><a>More</a></v-chip>
+              </v-card-text>
+            </v-card>
           </v-container>
         </v-col>
-        <v-col md="4" sm="12">
-          <v-container fluid>
-            <v-img src="https://picsum.photos/500/300?image=10" />
-            <h2>BBB</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum ac nibh a malesuada. Etiam a arcu
-              ullamcorper, luctus dui tristique, varius magna.
-              <v-chip><a>More</a></v-chip>
-            </p>
+        <v-col md="4" sm="6" xs="12">
+          <v-container>
+            <v-card>
+              <v-img src="https://picsum.photos/500/300?image=20" />
+              <v-card-title>BBB</v-card-title>
+              <v-card-text>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vestibulum ac nibh a malesuada. Etiam a
+                arcu ullamcorper, luctus dui tristique, varius magna.
+              </v-card-text>
+              <v-card-text>
+                <v-chip><a>More</a></v-chip>
+              </v-card-text>
+            </v-card>
           </v-container>
         </v-col>
-        <v-col md="4" sm="12">
+        <v-col md="4" sm="6" xs="12">
           <v-container fluid>
             <v-img src="https://picsum.photos/500/300?image=30" />
             <h2>CCC</h2>

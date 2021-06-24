@@ -1,11 +1,10 @@
 <template>
   <div class="about">
     <div class="about-title">联系我们</div>
-
     <div class="address-container">
-      <baidu-map class="map" :center="display" :zoom="16">
-        <bm-marker :position="center" @click="infoWindowOpen">
-          <bm-info-window :show="show" @close="infoWindowClose" @open="infoWindowOpen">
+      <baidu-map class="map" :center="windowCenter" :zoom="16">
+        <bm-marker :position="markerCenter" @click="openInfoWindow(true)">
+          <bm-info-window :show="showInfoWindow" @close="openInfoWindow(false)" @open="openInfoWindow(true)">
             <div class="address-window">
               <p>公司名称</p>
               <a
@@ -18,7 +17,7 @@
           </bm-info-window>
         </bm-marker>
       </baidu-map>
-      <div class="address">
+      <div class="address-description">
         <div class="address-sub-title">公司地址</div>
         <div class="address-body">地址：新疆路518号</div>
         <div class="address-body">邮箱：contact@example.com</div>
@@ -50,29 +49,26 @@
 export default {
   data() {
     return {
-      display: { lng: 121.473138, lat: 31.249951 },
-      center: { lng: 121.473138, lat: 31.248893 },
-      show: true,
+      windowCenter: { lng: 121.473138, lat: 31.249951 },
+      markerCenter: { lng: 121.473138, lat: 31.248893 },
+      showInfoWindow: true,
     };
   },
   methods: {
-    infoWindowClose() {
-      this.show = false;
-    },
-    infoWindowOpen() {
-      this.show = true;
+    openInfoWindow(input) {
+      this.showInfoWindow = input;
     },
   },
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .about-title {
-  font-size: 30px;
   margin-left: 250px;
-  font-style: italic;
   margin-top: 80px;
   margin-bottom: 50px;
+  font-size: 30px;
+  font-style: italic;
   font-weight: bold;
   color: black;
 }
@@ -81,37 +77,37 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.address-window {
-  text-align: center;
-  font-size: 15px;
-}
+  .map {
+    margin-right: 80px;
+    width: 400px;
+    height: 250px;
+  }
 
-.map {
-  margin-right: 80px;
-  width: 400px;
-  height: 250px;
-}
+  .address-window {
+    text-align: center;
+    font-size: 15px;
+  }
 
-.address {
-  line-height: 30px;
-}
+  .address-description {
+    line-height: 30px;
 
-.address-sub-title {
-  font-size: 18px;
-}
+    .address-sub-title {
+      font-size: 18px;
+    }
 
-.address-body {
-  font-size: 14px;
+    .address-body {
+      font-size: 14px;
+    }
+  }
 }
 
 .social-media-title {
   margin-top: 80px;
+  color: black;
   font-size: 30px;
   text-align: center;
   font-weight: bold;
-  color: black;
 }
 
 .social-media-image {
@@ -120,19 +116,19 @@ export default {
   align-items: center;
   margin-top: 50px;
   margin-bottom: 100px;
-}
 
-.social-media-link {
-  margin: 20px;
-}
+  .social-media-link {
+    margin: 20px;
+  }
 
-.social-media-icon {
-  width: 50px;
-  height: 50px;
-}
+  .social-media-icon {
+    width: 50px;
+    height: 50px;
+  }
 
-.social-media-code {
-  height: 140px;
-  margin-left: 60px;
+  .social-media-code {
+    margin-left: 60px;
+    height: 140px;
+  }
 }
 </style>
